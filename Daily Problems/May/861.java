@@ -1,6 +1,5 @@
 //  861. Score After Flipping Matrix
 
-
 class Solution {
     public int matrixScore(int[][] grid) {
         int n = grid.length, m = grid[0].length;
