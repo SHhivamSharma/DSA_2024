@@ -5,7 +5,9 @@ public class Pattern1 {
         System.out.println("Enter Number");
 
         int n = scn.nextInt() ; 
-        Pattern01(n);
+        // Pattern01(n);
+        Pattern02(n);
+
     }
 
 
@@ -23,6 +25,25 @@ public class Pattern1 {
                 System.out.print("*");
             }
             System.out.print("\n");
+        }
+    }
+
+
+   /* for n = 5 
+    *
+    *       *
+    *       *       *
+    *       *       *       *
+    *       *       *       *       *
+    
+    */
+
+    public static void Pattern02(int n){
+        for(int i = 0 ; i<n ; i++){
+            for(int j = 0 ; j<=i ; j++){
+                System.out.print("*\t");
+            }
+            System.out.println();
         }
     }
 }
