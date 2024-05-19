@@ -9,7 +9,9 @@ public class Pattern1 {
         // Pattern02(n);
         // Pattern03(n);
         // Pattern03_1(n);
-        Pattern04(n);
+        // Pattern04(n);
+        // Pattern04_1(n);
+        Pattern05(n);
 
     }
 
@@ -30,6 +32,7 @@ public class Pattern1 {
             System.out.print("\n");
         }
     }
+    // ------------------------------------------------------ ---------------------------
 
 
    /* for n = 5 
@@ -49,6 +52,7 @@ public class Pattern1 {
             System.out.println();
         }
     }
+    // ------------------------------------------------------ ---------------------------
 
     /* for n = 5 
     *       *       *       *       *
@@ -67,13 +71,7 @@ public class Pattern1 {
         }
     }
 
-    /* for n = 5 By revesing the loop 
-    *       *       *       *       *
-    *       *       *       *
-    *       *       *
-    *       *
-    *
-    */
+    // for n = 5 By revesing the loop 
 
     public static void Pattern03_1(int n){
         for(int i = n ; i>=1 ; i--){
@@ -84,8 +82,9 @@ public class Pattern1 {
         }
     }
 
+    // ------------------------------------------------------ ---------------------------
 
-    /* for n = 5 By revesing the loop 
+    /* for n = 5 
     1
     1       2
     1       2       3
@@ -105,6 +104,40 @@ public class Pattern1 {
             Number = 1;
         }
 
+
     }
+// by indexes of the loop 
+    public static void Pattern04_1(int n){
+        for(int i = 1 ; i<=n; i++){
+            for(int j = 1 ; j<=i ;j++){
+                System.out.print(j+"\t");
+            }
+            System.out.println();
+        }
+
+    }
+
+    // ------------------------------------------------------ ---------------------------
+
+    
+    /* for n = 5 By revesing the loop 
+    1
+    2       2
+    3       3       3
+    4       4       4       4
+    5       5       5       5       5
+    */
+
+    public static void Pattern05(int n){
+        for(int i = 1 ; i<=n ; i++){
+            for(int j = 1 ; j<=i ; j++){
+                System.out.print(i+"\t");
+            }
+            System.out.println();
+        }
+    }
+
+
+
 
 }
