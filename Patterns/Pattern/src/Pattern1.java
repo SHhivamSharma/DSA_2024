@@ -11,7 +11,7 @@ public class Pattern1 {
         // Pattern03_1(n);
         // Pattern04(n);
         // Pattern04_1(n);
-        Pattern07(n);
+        Pattern08(n);
 
 
     }
@@ -167,6 +167,35 @@ public class Pattern1 {
 
     public static void Pattern07(int n){
         for(int i = 0 ; i < n ; i++){
+            int nsp = n-i-1;
+            int nst = 2*i +1;
+            for(int j = 0 ; j < nsp ; j++){
+                System.out.print("\t");
+            }
+            for(int j = 0 ; j < nst ; j++){
+                System.out.print("*\t");
+            }
+
+            for(int j = 0 ; j < nsp ; j++){
+                System.out.print("\t");
+            }
+            System.out.println();
+        }
+    }
+
+
+
+     /* for n = 5 
+        *       *       *       *       *       *       *       *       *
+                *       *       *       *       *       *       *
+                        *       *       *       *       *
+                                *       *       *
+                                        *
+    */
+
+
+    public static void Pattern08(int n){
+        for(int i = n-1 ; i >= 0 ; i--){
             int nsp = n-i-1;
             int nst = 2*i +1;
             for(int j = 0 ; j < nsp ; j++){
