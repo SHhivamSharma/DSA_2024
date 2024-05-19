@@ -6,7 +6,8 @@ public class Pattern1 {
 
         int n = scn.nextInt() ; 
         // Pattern01(n);
-        Pattern02(n);
+        // Pattern02(n);
+        Pattern03(n);
 
     }
 
@@ -35,12 +36,29 @@ public class Pattern1 {
     *       *       *
     *       *       *       *
     *       *       *       *       *
-    
+
     */
 
     public static void Pattern02(int n){
         for(int i = 0 ; i<n ; i++){
             for(int j = 0 ; j<=i ; j++){
+                System.out.print("*\t");
+            }
+            System.out.println();
+        }
+    }
+
+    /* for n = 5 
+    *       *       *       *       *
+    *       *       *       *
+    *       *       *
+    *       *
+    *
+    */
+
+    public static void Pattern03(int n){
+        for(int i = 0 ; i<n ; i++){
+            for(int j = 0 ; j<n-i ; j++){
                 System.out.print("*\t");
             }
             System.out.println();
