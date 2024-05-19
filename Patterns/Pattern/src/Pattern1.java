@@ -11,7 +11,7 @@ public class Pattern1 {
         // Pattern03_1(n);
         // Pattern04(n);
         // Pattern04_1(n);
-        Pattern06(n);
+        Pattern07(n);
 
 
     }
@@ -121,7 +121,7 @@ public class Pattern1 {
     // ------------------------------------------------------ ---------------------------
 
     
-    /* for n = 5 By revesing the loop 
+    /* for n = 5 
     1
     2       2
     3       3       3
@@ -139,7 +139,7 @@ public class Pattern1 {
     }
     // ------------------------------------------------------ ---------------------------
 
-    /* for n = 5 By revesing the loop 
+    /* for n = 5 
     1       2       3       4       5
     1       2       3       4
     1       2       3
@@ -151,6 +151,33 @@ public class Pattern1 {
         for(int i = 1 ; i<=n ; i++){
             for(int j = 1 ; j<=n-i+1 ; j++){
                 System.out.print(j+"\t");
+            }
+            System.out.println();
+        }
+    }
+
+    /* for n = 5 
+                                        *
+                                *       *       *
+                        *       *       *       *       *
+                *       *       *       *       *       *       *
+        *       *       *       *       *       *       *       *       *
+    */
+
+
+    public static void Pattern07(int n){
+        for(int i = 0 ; i < n ; i++){
+            int nsp = n-i-1;
+            int nst = 2*i +1;
+            for(int j = 0 ; j < nsp ; j++){
+                System.out.print("\t");
+            }
+            for(int j = 0 ; j < nst ; j++){
+                System.out.print("*\t");
+            }
+
+            for(int j = 0 ; j < nsp ; j++){
+                System.out.print("\t");
             }
             System.out.println();
         }
