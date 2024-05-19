@@ -11,7 +11,7 @@ public class Pattern1 {
         // Pattern03_1(n);
         // Pattern04(n);
         // Pattern04_1(n);
-        Pattern08(n);
+        Pattern08_1(n);
 
 
     }
@@ -185,7 +185,7 @@ public class Pattern1 {
 
 
 
-     /* for n = 5 
+     /* for n = 5 // by revering the loop
         *       *       *       *       *       *       *       *       *
                 *       *       *       *       *       *       *
                         *       *       *       *       *
@@ -205,6 +205,30 @@ public class Pattern1 {
                 System.out.print("*\t");
             }
 
+            for(int j = 0 ; j < nsp ; j++){
+                System.out.print("\t");
+            }
+            System.out.println();
+        }
+    }
+
+
+    public static void Pattern08_1(int n){
+        for(int i = 0 ; i < n ; i++){
+            int nsp = i;
+            int nst = 2*n- (2*i+1);
+
+            //Inner loop for space
+            for(int j = 0 ; j < nsp ; j++){
+                System.out.print("\t");
+            }
+
+           //Inner loop for Start
+            for(int j = 0 ; j < nst ; j++){
+                System.out.print("*\t");
+            }
+
+            //Inner loop for space
             for(int j = 0 ; j < nsp ; j++){
                 System.out.print("\t");
             }
