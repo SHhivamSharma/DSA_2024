@@ -12,7 +12,7 @@ public class Pattern1 {
         // Pattern04(n);
         // Pattern04_1(n);
         // Pattern08_1(n);
-        Pattern10(n);
+        Pattern11(n);
 
 
     }
@@ -307,6 +307,34 @@ public class Pattern1 {
             }else{
                 nst--;
             }
+            System.out.println();
+        }
+    }
+
+
+
+    /* for n = 5 
+        1
+        0       1
+        1       0       1
+        0       1       0       1
+        1       0       1       0       1
+  
+    */
+
+    public static void Pattern11(int n){
+        int c = 0;
+        for(int i = 0 ; i<n ; i++){
+            if(i%2 == 0){
+                c = 1;
+            }else{
+                c = 0;
+            }
+            for(int j = 0 ; j<=i ; j++){
+                System.out.print(c +"\t");
+                c =  c == 1 ? 0 : 1;
+            }
+            
             System.out.println();
         }
     }
