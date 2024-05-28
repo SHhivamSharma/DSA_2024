@@ -1,22 +1,6 @@
 import java.util.*;
 public class Pattern1 {
-    public static void main(String[] args) throws Exception {
-        Scanner scn = new Scanner(System.in);
-        System.out.println("Enter Number");
-
-        int n = scn.nextInt() ; 
-        // Pattern01(n);
-        // Pattern02(n);
-        // Pattern03(n);
-        // Pattern03_1(n);
-        // Pattern04(n);
-        // Pattern04_1(n);
-        // Pattern08_1(n);
-        Pattern15(n);
-
-
-    }
-
+ 
 
    /* for n = 5 
     *****
@@ -454,6 +438,30 @@ public class Pattern1 {
             System.out.println();
         }
     }
+
+    public static void Pattern16(int n ){
+        char ch = 'A';
+        for(int i = 0  ; i <n ; i++){
+            for(int j = 0 ; j<=i ; j++){
+                System.out.print(ch);
+            }
+            ch++;
+            System.out.println();
+        }
+    }
+    
+
+
+    /// Main function 
+    public static void main(String[] args) throws Exception {
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Enter Number");
+
+        int n = scn.nextInt() ; 
+        Pattern16(n);
+    }
+
+
 
 
 }
