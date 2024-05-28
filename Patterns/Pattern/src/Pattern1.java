@@ -12,7 +12,7 @@ public class Pattern1 {
         // Pattern04(n);
         // Pattern04_1(n);
         // Pattern08_1(n);
-        Pattern14(n);
+        Pattern15(n);
 
 
     }
@@ -437,6 +437,23 @@ public class Pattern1 {
             System.out.println();
         }
     }
-    
+
+    /* for n = 5 
+    A       B       C       D       E
+    A       B       C       D
+    A       B       C
+    A       B
+    A
+    */
+
+    public static void Pattern15(int n ){
+        for(int i = n  ; i >0 ; i--){
+            for(char ch = 'A'  ; ch < 'A' +i ; ch++){
+                System.out.print(ch+"\t");
+            }
+            System.out.println();
+        }
+    }
+
 
 }
