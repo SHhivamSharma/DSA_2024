@@ -439,6 +439,14 @@ public class Pattern1 {
         }
     }
 
+    /* for n = 5 
+        A
+        BB
+        CCC
+        DDDD
+        EEEEE
+    */
+
     public static void Pattern16(int n ){
         char ch = 'A';
         for(int i = 0  ; i <n ; i++){
@@ -446,6 +454,42 @@ public class Pattern1 {
                 System.out.print(ch);
             }
             ch++;
+            System.out.println();
+        }
+    }
+
+    /* for n = 5 
+                                    A
+                            A       B       A
+                    A       B       C       B       A
+            A       B       C       D       C       B       A
+    A       B       C       D       E       D       C       B       A
+    */
+
+
+    public static void Pattern17(int n ){
+        for(int i = 1 ; i <= n ; i++){
+            int nsp = n - i;
+            int nst = 2*i -1;
+            char ch = 'A';
+
+            for(int j = 0 ; j<nsp ; j++){
+                System.out.print("\t");
+            }
+
+            for(int j = 0 ; j<nst ; j++){
+                System.out.print(ch+"\t");
+                if(nsp+j+1 < n){
+                    ch++;
+                }else{
+                    ch--;
+                }
+            }
+
+            for(int j = 0 ; j<nsp ; j++){
+                System.out.print("\t");
+            }
+
             System.out.println();
         }
     }
@@ -458,7 +502,7 @@ public class Pattern1 {
         System.out.println("Enter Number");
 
         int n = scn.nextInt() ; 
-        Pattern16(n);
+        Pattern17(n);
     }
 
 
