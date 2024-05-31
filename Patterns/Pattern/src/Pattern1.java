@@ -567,13 +567,41 @@ public class Pattern1 {
 
     }
 
+
+    public static void Pattern20(int n ){
+        int nst = 0 ;
+        int nsp = (2*n) ;
+        for(int i = 1 ; i< 2* n; i++){
+            if(i > n){
+                nsp +=2;
+            }else{
+                nsp -=2;
+            }
+
+            nst = ((2*n)- nsp)/2;
+            for(int j = 0 ; j < nst ; j++){
+                System.out.print("*");
+            }
+
+            for(int j = 0 ; j < nsp ; j++){
+                System.out.print(" ");
+            }
+            for(int j = 0 ; j < nst ; j++){
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+
+    }
+
     /// Main function 
     public static void main(String[] args) throws Exception {
         Scanner scn = new Scanner(System.in);
         System.out.println("Enter Number");
 
         int n = scn.nextInt() ; 
-        Pattern19(n);
+        Pattern20(n);
     }
 
 
