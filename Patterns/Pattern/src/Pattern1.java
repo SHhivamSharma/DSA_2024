@@ -494,6 +494,29 @@ public class Pattern1 {
         }
     }
     
+    /* for n = 5 
+        E
+        DE
+        CDE
+        BCDE
+        ABCDE
+     */
+
+    public static void Pattern18(int n ){
+
+        for(int i = 0 ; i<n ; i++){
+            char ch = 'A';
+
+            for(int k = 0; k < n-1-i ;k++){
+                ch++;
+            }
+            for(int j = 0 ; j <=i ; j++){
+                System.out.print(ch);
+                ch++;
+            }
+            System.out.println("");
+        }
+    }
 
 
     /// Main function 
@@ -502,7 +525,7 @@ public class Pattern1 {
         System.out.println("Enter Number");
 
         int n = scn.nextInt() ; 
-        Pattern17(n);
+        Pattern18(n);
     }
 
 
