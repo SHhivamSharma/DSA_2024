@@ -3,6 +3,27 @@
 
 class Solution {
     public boolean judgeSquareSum(int c) {
+        long s = 0 ;
+        long e =  (long)Math.sqrt(c);
+        while( s<= e){
+            long sqr = (s * s) + (e * e);
+            if(c == sqr){
+                return true;
+            }else if( sqr > c){
+                e--;
+            }else{
+                s++;
+            }
+
+        }
+        return false;
+    }
+}
+
+
+//Solution 2
+class Solution {
+    public boolean judgeSquareSum(int c) {
         for (int divisor = 2; divisor * divisor <= c; divisor++) {
             if (c % divisor == 0) {
                 int exponentCount = 0;
