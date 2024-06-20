@@ -14,7 +14,6 @@ class Solution {
             }else{
                 s++;
             }
-            
 
         }
         return false;
