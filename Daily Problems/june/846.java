@@ -12,6 +12,7 @@ class Solution {
             cardCount.put(card, cardCount.getOrDefault(card, 0) + 1);
         }
 
+        
         for (int card : cardCount.keySet()) {
             int count = cardCount.get(card);
             if (count > 0) {
