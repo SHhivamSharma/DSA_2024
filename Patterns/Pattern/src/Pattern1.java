@@ -665,7 +665,7 @@ public class Pattern1 {
     *       *       *       *       *
             *       *       *
                     *
-                    
+
     */
     public static void Pattern23(int n){
         int nsp = n/2 ;
@@ -695,13 +695,53 @@ public class Pattern1 {
         }
     }
 
+
+    /*
+    5
+    *       *       *       -       *       *       *
+    *       *       -       -       -       *       *
+    *       -       -       -       -       -       *
+    *       *       -       -       -       *       *
+    *       *       *       -       *       *       *
+    */
+
+    public static void Pattern24(int n){
+        int nsp = 1;
+        int nst = (n/2) +1;
+        for(int i = 0 ; i < n ; i++){
+            for(int j = 0 ; j < nst ; j ++){
+                System.out.print("*\t");
+            }
+
+            for(int j = 0 ; j < nsp ; j ++){
+                System.out.print("-\t");
+            }
+
+
+            for(int j = 0 ; j < nst ; j ++){
+                System.out.print("*\t");
+            }
+
+            if( i >= n/2){
+                nst++;
+                nsp-=2;
+            }else{
+                nst--;
+                nsp+=2;
+            }
+            System.out.println("");
+        }
+        
+
+    }
+
     /// Main function 
     public static void main(String[] args) throws Exception {
         Scanner scn = new Scanner(System.in);
         System.out.println("Enter Number");
 
         int n = scn.nextInt() ; 
-        Pattern23(n);
+        Pattern24(n);
     }
 
 
