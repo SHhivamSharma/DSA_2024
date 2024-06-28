@@ -793,6 +793,27 @@ public class Pattern1 {
         }
     }
 
+    /*
+       n= 5
+        *                               *
+                *               *
+                        *
+                *               *
+        *                               *
+    */
+
+    public static void Pattern27(int n){
+        for(int i = 0 ; i < n ; i++){
+            for(int j = 0 ; j < n ; j++){
+                if( i == j || (i+j) == (n-1) ){
+                    System.out.print("*\t");
+                }else{
+                    System.out.print("\t");
+                }
+            }
+            System.out.println();
+        }
+    }
 
     /// Main function 
     public static void main(String[] args) throws Exception {
@@ -800,7 +821,7 @@ public class Pattern1 {
         System.out.println("Enter Number");
 
         int n = scn.nextInt() ; 
-        Pattern26_2(n);
+        Pattern27(n);
     }
 
 
