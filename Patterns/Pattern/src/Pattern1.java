@@ -756,6 +756,43 @@ public class Pattern1 {
         }
     }
 
+    /*n =5
+
+                                    *
+                            *
+                    *
+            *
+    *
+
+    */
+
+    public static void Pattern26_1(int n){
+
+        for(int i = 0 ; i < n ; i++){
+            for(int k = 0 ; k < n ; k++){
+                if( (i + k) == (n-1) ){
+                    System.out.print("*\t");
+                } else{
+                    System.out.print("\t");
+                }     
+            }
+            System.out.println();
+        }
+    }
+
+
+    public static void Pattern26_2(int n){
+        int nsp = n-1;
+        for(int i = 0 ; i < n ; i++){
+            for(int k = 0 ; k < nsp ; k++){
+                System.out.print("\t");
+            }
+            System.out.print("*\t");
+            nsp--;
+            System.out.println();
+        }
+    }
+
 
     /// Main function 
     public static void main(String[] args) throws Exception {
@@ -763,7 +800,7 @@ public class Pattern1 {
         System.out.println("Enter Number");
 
         int n = scn.nextInt() ; 
-        Pattern25(n);
+        Pattern26_2(n);
     }
 
 
